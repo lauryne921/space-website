@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/generic.css">
+    <link rel="stylesheet" href="../css/technology.css">
+    <title>Technology</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/shared/logo.svg" alt="logo" id="logo">
+        <div id="header-trait"></div>
+        <label for="toggle">
+            <img src="../assets/menu-burger.png" alt="menu" class="label-img" />
+        </label>
+        <input type="checkbox" id="toggle" />
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html" id="home">
+                        <span>00</span>
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./destination.html" id="destination">
+                        <span>01</span>
+                        <span>DESTINATION</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./crew.html" id="crew">
+                        <span>02</span>
+                        <span>CREW</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./technology.html" id="technology">
+                        <span>03</span>
+                        <span>TECHNOLOGY</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            <span class="number">03</span>
+            <span>SPACE LAUNCH 101</span>
+        </h1>
+        <div class="tech-container">
+            <div class="input-container">
+                <input type="radio" name="technologyOne" id="1" value="1" class="tech-input" />
+                <label for="technologyOne" class="tech-label" id="vehicle-label">1</label>
+                <input type="radio" name="technologyTwo" id="2" value="2" class="tech-input" />
+                <label for="technologyTwo" class="tech-label" id="capsule-label">2</label>
+                <input type="radio" name="technologyThree" id="3" value="3" class="tech-input" />
+                <label for="technologyThree" class="tech-label" id="spaceport-label">3</label>
+            </div>
+            <div id="container">
+                
+            </div>
+        </div>
+        <template id="capsule">
+            <div class="first-column">
+                <p class="terminology">THE TERMINOLOGY ...</p>
+                <h2>SPACE CAPSULE</h2>
+                <p class="text">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+            </div>
+            <div class="second-column">
+                <img src="../assets/technology/image-space-capsule-portrait.jpg" alt="capsule" class="capsule-img">
+            </div>
+        </template>
+        <template id="spaceport">
+            <div class="first-column">
+                <p class="terminology">THE TERMINOLOGY ...</p>
+                <h2>SPACEPORT</h2>
+                <p class="text">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+            </div>
+            <div class="second-column">
+                <img src="../assets/technology/image-spaceport-portrait.jpg" alt="spaceport" class="spaceport-img">
+            </div>
+        </template>
+        <template id="vehicle">
+            <div class="first-column">
+                <p class="terminology">THE TERMINOLOGY ...</p>
+                <h2>LAUNCH VEHICLE</h2>
+                <p class="text">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+            <div class="second-column">
+                <img src="../assets/technology/image-launch-vehicle-portrait.jpg" alt="launch vehicle" class="launch-vehicle-img">
+            </div>
+        </template>
+    </main>
+    <script src="../js/technology.js"></script>
+    <script src="../js/generic.js"></script>
+</body>
+</html>

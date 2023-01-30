@@ -1,0 +1,177 @@
+:root {
+    --transparent-grey: rgba(161, 190, 217, 0.661); 
+}
+
+body {
+    background-image: url(../assets/crew/background-crew-desktop.jpg); 
+    background-position: fixed;
+}
+
+.number {
+    color: var(--transparent-grey);
+}
+
+.image {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Slideshow container */
+#container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    color: var(--transparent-grey);
+}
+
+.job {
+    font-size: 2rem;
+}
+
+h2 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* The dots/bullets/indicators */
+.navigation-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.navigation-dot:hover {
+    background-color: #717171;
+}
+
+.text {
+    margin-top: 5%;
+}
+
+.anousheh {
+    width: 33rem;
+}
+
+.douglas {
+    width: 26rem;
+}
+
+.victor {
+    width: 30rem;
+}
+
+.mark {
+    width: 24rem;
+}
+
+.slide-navigation {
+    position: absolute;
+    bottom: 17%;
+    left: 20%;
+    text-align: center;
+}
+
+
+@media screen and (max-width:900px) {
+    body {
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+    }
+
+    #container {
+        margin-right: 2%;
+    }
+    
+    .job {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .anousheh {
+        width: 25rem;
+    }
+    
+    .douglas {
+        width: 26rem;
+    }
+    
+    .victor {
+        width: 26rem;
+    }
+    
+    .mark {
+        width: 20rem;
+    }
+    
+    .slide-navigation {
+        position: absolute;
+        bottom: 12%;
+        left: 10%;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width:550px) {
+    body {
+        background-color: url(../assets/crew/background-crew-mobile.jpg);
+    }
+
+    main {
+        margin-top: 10%;
+    }
+
+    .text {
+        margin-top: 0;
+    }
+
+    .job {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .anousheh {
+        position: absolute;
+        top: 55%;
+        left: 25%;
+        width: 19rem;
+    }
+    
+    .douglas {
+        position: absolute;
+        left: 25%;
+        width: 18rem;
+    }
+    
+    .victor {
+        position: absolute;
+        left: 25%;
+        width: 18.5rem;
+    }
+    
+    .mark {
+        position: absolute;
+        left: 27%;
+        width: 15.5rem;
+    }
+    
+    .slide-navigation {
+        position: absolute;
+        bottom: 8%;
+        left: 10%;
+        text-align: center;
+    }
+}
